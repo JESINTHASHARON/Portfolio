@@ -2,6 +2,6 @@
 JESINTHA SHARON S
 ## File Structure
 - [Portfolio/index.html](Portfolio/index.html)
-- [script.js](script.js)
-- [style.css](style.css)
+- [Portfolio/script.js](Portfolio/script.js)
+- [Portfolio/style.css](Portfolio/style.css)
 - [Portfolio](Portfolio/)
