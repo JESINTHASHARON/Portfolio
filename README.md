@@ -5,3 +5,4 @@ JESINTHA SHARON S
 - [Portfolio/script.js](Portfolio/script.js)
 - [Portfolio/style.css](Portfolio/style.css)
 - [Portfolio](Portfolio/)
+- Open the [index.html](Portfolio/index.html) file to view the portfolio.
