@@ -221,10 +221,10 @@ section .title::after{
     width: 45%;
 }
 .about .about-content .left img{
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 300px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 20px;
 }
 .about .about-content .right{
     width: 55%;
@@ -304,11 +304,11 @@ section .title::after{
 }
 
 /* skills section styling */
-
+/* 
 .skills .title::after{
     content: "what i know";
 }
-.skills .skills-content .column{
+.skills .-content .column{
     width: calc(50% - 30px);
 }
 .skills .skills-content .left .text{
@@ -376,7 +376,7 @@ section .title::after{
 }
 .skills-content .right .mysql::before{
     width: 70%;
-}
+} */
 /*button*/
 .cv-button {
     background-color: rgb(32, 168, 134);
@@ -447,8 +447,15 @@ section .title::after{
     border-color: #fff;
 }
 /* certificate section styling */
+.certificate{
+    background-color: black;
+    color: white;
+}
 .certificate .title::after{
     content: "My Achievements";
+    background-color: black;
+    font-size: 15px;
+    color: rgb(38, 231, 189);
 }
 .certificate .carousel .card{
     background: #222;
@@ -471,13 +478,13 @@ section .title::after{
 }
 .certificate .carousel .card:hover .box{
     transform: scale(1.05);
-    color: white;
+    color:  white;
 }
 .certificate .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
-    color: white
+    color: white;
 }
 .certificate .carousel .card img{
     height: 200px;
@@ -511,6 +518,54 @@ section .title::after{
 .owl-dot:hover{
     background: rgb(38, 231, 189)!important;
 }
+
+
+.catalogue-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px 0;
+}
+
+.catalogue-items {
+  display: flex;
+  gap: 20px;
+}
+
+.catalogue-card {
+  display: inline-block;
+  width: 220px;
+  min-height: 220px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex-shrink: 0;
+  overflow: hidden;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.catalogue-card:hover {
+  transform: translateY(-5px);
+}
+
+.catalogue-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.catalogue-text {
+  padding: 10px;
+  font-weight: bold;
+  color: #333;
+  white-space: normal;       /* allow wrapping */
+  word-wrap: break-word;     /* break long words */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+}
+
 
 /* contact section styling */
 .contact .title::after{
@@ -750,3 +805,49 @@ footer span a:hover{
     }
 }
 
+
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lightbox-img {
+    max-width: 90%;
+    max-height: 80%;
+    box-shadow: 0 0 15px #fff;
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.lightbox .nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 40px;
+    padding: 0 20px;
+    transform: translateY(-50%);
+}
+
+.lightbox .prev, .lightbox .next {
+    cursor: pointer;
+    user-select: none;
+}

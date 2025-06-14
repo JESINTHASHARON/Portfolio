@@ -6,8 +6,6 @@ $(document).ready(function(){
         }else{
             $('.navbar').removeClass("sticky");
         }
-        
-        // scroll-up button show/hide script
         if(this.scrollY > 500){
             $('.scroll-up-btn').addClass("show");
         }else{
@@ -47,8 +45,6 @@ $(document).ready(function(){
         backSpeed: 60,
         loop: true
     });
-
-    // owl carousel script
     $('.carousel').owlCarousel({
         margin: 20,
         loop: true,

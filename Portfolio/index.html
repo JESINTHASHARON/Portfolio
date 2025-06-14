@@ -24,9 +24,11 @@
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
                 <li><a href="#certificate" class="menu-btn">Certifications</a></li>
-                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <!-- <li><a href="#skills" class="menu-btn">Skills</a></li> -->
+                <li><a href="#catalogue" class="menu-btn">Project</a></li>
                 <li><a href="#teams" class="menu-btn">Education</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
+
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -65,72 +67,77 @@
     </section>
 
     <!-- certificate section start -->
+
     <section class="certificate" id="certificate">
-        <div class="max-width">
-            <h2 class="title">Certification</h2>
-            <div class="carousel owl-carousel">
-                <div class="card">
-                    <a href="https://youtu.be/Il1L-MiDPpk?feature=shared" target="_blank">
-                        <div class="box">
-                            <img src="images/Mern.jpg" alt="">
-                            <div class="text">Internship - Mern Stack Development</div>
-                            <p>Developed a Responsive Website for Hotel Booking and Management</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="https://drive.google.com/drive/folders/1djHghkU9NbXwCaYuefqRqYTUAvQciHb0?usp=drive_link" target="_blank">
-                        <div class="box">
-                            <img src="images/intercollege.jpg" alt="">
-                            <div class="text">Course Certification</div>
-                            <p>Courses on DBMS, CSS, Angular...</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="https://drive.google.com/drive/folders/1TDnnZnFtTQBEHl9t9pedwCKUAPbPng8Z?usp=drive_link" target="_blank">
-                        <div class="box">
-                            <img src="images/nptel.jpg" alt="">
-                            <div class="text">Nptel Certifications</div>
-                            <p>Courses - "Cloud Computing" "IOT" "IIOT 4.0" "Privacy and Security"</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="https://drive.google.com/drive/folders/11wMaSgpVeQO4RnunaVIS9rArbq0gYaaU?usp=drive_link" target="_blank">
-                        <div class="box">
-                            <img src="images/intracollege.jpeg" alt="">
-                            <div class="text">Intracollege Events</div>
-                            <p>Conducted By - "CSI club" "IE(I) Club"</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="https://drive.google.com/drive/folders/1GtY0hIfQG7P_3sfKRanJrwOwgA2EK-qu?usp=drive_link" target="_blank">
-                        <div class="box">
-                            <img src="images/Sololearn.jpg" alt="">
-                            <div class="text">Sololearn</div>
-                            <p>Courses : "C" "C++" "SQL"</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="https://drive.google.com/drive/folders/1zk2FptkIm_zbOKnBCagQfQbvEp3B_BW4?usp=drive_link" target="_blank">
-                        <div class="box">
-                            <img src="images/Intercollege.jpg" alt="">
-                            <div class="text">Intercollege Event Participation</div>
-                            <p>Coding&nbsp;&nbsp;&nbsp;&nbsp;Paper Presentation&nbsp;&nbsp;&nbsp;&nbsp;Technical Quiz</p>
-                        </div>
-                    </a>
+    <div class="max-width">
+        <h2 class="title">Certification</h2>
+        <div class="carousel owl-carousel">
+            <div class="card">
+                <a href="https://youtu.be/Il1L-MiDPpk?feature=shared" target="_blank">
+                    <div class="box">
+                        <img src="images/Mern.jpg" alt="">
+                        <div class="text">Internship - MERN Stack</div>
+                        <p>Hotel Booking and Management</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card" data-category="course">
+                <div class="box">
+                    <img src="images/Courses.jpg" alt="Courses">
+                    <div class="text">Courses</div>
+                    <p>DBMS, Angular, React</p>
                 </div>
             </div>
+
+            <div class="card" data-category="sololearn">
+                <div class="box">
+                    <img src="images/Sololearn.jpg" alt="Sololearn">
+                    <div class="text">Sololearn</div>
+                    <p>C, C++</p>
+                </div>
+            </div>
+
+            <div class="card" data-category="nptel">
+                <div class="box">
+                    <img src="images/nptel.jpg" alt="">
+                    <div class="text">NPTEL Certifications</div>
+                    <p>Cloud Computing, IOT, Privacy, IIOT 4.0</p>
+                </div>
+            </div>
+
+            <div class="card" data-category="intracollege">
+                <div class="box">
+                    <img src="images/intracollege.jpeg" alt="">
+                    <div class="text">Intracollege Events</div>
+                    <p>CSI Club, IE(I) Club</p>
+                </div>
+            </div>
+
+            <div class="card" data-category="intercollege">
+                <div class="box">
+                    <img src="images/Intercollege.jpg" alt="">
+                    <div class="text">Intercollege Participation</div>
+                    <p>Quiz, Coding, Paper Presentation</p>
+                </div>
+            </div>
+
         </div>
-    </section>
-    
-           
+    </div>
+</section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-img" src="" alt="Certificate">
+        <div class="nav">
+            <span class="prev">&#10094;</span>
+            <span class="next">&#10095;</span>
+        </div>
+    </div>   
 
     <!-- skills section start -->
-    <section class="skills" id="skills">
+    <!-- <section class="skills" id="skills">
         <div class="max-width">
             <h2 class="title">My skills</h2>
             <div class="skills-content">
@@ -185,7 +192,43 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+
+        <!-- catalogue section start -->
+<section class="catalogue" id="catalogue">
+  <div class="max-width">
+    <h2 class="title">Catalogue</h2>
+    <div class="catalogue-container">
+      <div class="catalogue-items">
+        <a href="https://jesinthasharon.github.io/Expense-Tracker/" target="_blank" class="catalogue-card">
+          <img src="images/ExpenseTracker.jpg" alt="Item 1">
+          <div class="catalogue-text">Expense Tracker</div>
+        </a>
+        <a href="https://github.com/JESINTHASHARON/Marketplace-for-Freelancers-and-Clients" target="_blank" class="catalogue-card">
+          <img src="images/MFC.png" alt="Item 2">
+          <div class="catalogue-text">Marketplace for Freelancers and Client</div>
+        </a>
+        <a href="https://github.com/JESINTHASHARON/MailMate" target="_blank" class="catalogue-card">
+          <img src="images/ChatApp.webp" alt="Item 3">
+          <div class="catalogue-text">A Chat Application</div>
+        </a>
+        <a href="https://github.com/JESINTHASHARON/Todo-List" target="_blank" class="catalogue-card">
+          <img src="images/Todo.webp" alt="Item 3">
+          <div class="catalogue-text">ToDo List</div>
+        </a>
+        <a href="https://github.com/JESINTHASHARON/CheckInn" target="_blank" class="catalogue-card">
+          <img src="images/CheckInn.jpg" alt="Item 3">
+          <div class="catalogue-text">CheckInn - Travel Management System</div>
+        </a>
+        <a href="https://jesinthasharon.github.io/LandingPage/Landing/landing.html" target="_blank" class="catalogue-card">
+          <img src="images/Landing Page.jpg" alt="Item 3">
+          <div class="catalogue-text">Landing Page Design</div>
+        </a>
+        <!-- Add more cards as needed -->
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- education section start -->
     <section class="teams" id="teams">
@@ -274,5 +317,79 @@
     </footer>
 
     <script src="script.js"></script>
-</body>
+        <script>
+            const certificatesByCategory = {
+                course:[
+                    "images/Course_DBMS.png",
+                    "images/Course_ReactJS.jpg",
+                    "images/Course_AngularJS.jpg"
+                ],
+                sololearn: [
+                    "images/C.png",
+                    "images/C++.png"
+                ],
+                nptel: [
+                    "images/Privacy and Security in Online Social Media.jpg",
+                    "images/IOT.jpg",
+                    "images/IIOT 4.0.jpg",
+                    "images/Cloud Computing.jpg",
+                    "images/Software Testing.jpg"
+                ],
+                intracollege: [
+                    "images/Intra_SQL.jpg",
+                    "images/Intra_BlindCode.jpg",
+                    "images/Intra_Techwarfare.png",
+                    "images/Intra_CodeCraze.jpg"
+                ],
+                intercollege: [
+                    "images/Inter_PPT.jpg",
+                    "images/Inter_Debug.jpg",
+                    "images/Inter_code.jpg"
+                ]
+            };
+
+            let currentSet = [];
+            let currentIndex = 0;
+
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.querySelector('.lightbox-img');
+            const closeBtn = document.querySelector('.close');
+            const prevBtn = document.querySelector('.prev');
+            const nextBtn = document.querySelector('.next');
+
+            // Attach lightbox only to non-MERN cards
+            document.querySelectorAll(".certificate .card[data-category]").forEach(card => {
+                card.addEventListener("click", () => {
+                    const category = card.getAttribute("data-category");
+                    currentSet = certificatesByCategory[category] || [];
+                    currentIndex = 0;
+
+                    if (currentSet.length > 0) {
+                        lightboxImg.src = currentSet[currentIndex];
+                        lightbox.style.display = "flex";
+                    }
+                });
+            });
+
+            closeBtn.addEventListener("click", () => {
+                lightbox.style.display = "none";
+            });
+
+            prevBtn.addEventListener("click", () => {
+                currentIndex = (currentIndex - 1 + currentSet.length) % currentSet.length;
+                lightboxImg.src = currentSet[currentIndex];
+            });
+
+            nextBtn.addEventListener("click", () => {
+                currentIndex = (currentIndex + 1) % currentSet.length;
+                lightboxImg.src = currentSet[currentIndex];
+            });
+
+            lightbox.addEventListener("click", (e) => {
+                if (e.target === lightbox) {
+                    lightbox.style.display = "none";
+                }
+            });
+        </script>
+    </body>
 </html>
